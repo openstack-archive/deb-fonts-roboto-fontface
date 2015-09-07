@@ -10,8 +10,10 @@ override_dh_install:
 	dh_install
 
 	# Make a symlink of all fonts in /usr/share/fonts-roboto-fontface/fonts
+	# and fix the x flag
 	mkdir -p debian/fonts-roboto-fontface/usr/share/fonts-roboto-fontface/fonts
 	for i in truetype eot svg woff ; do \
+		chmod -x debian/fonts-roboto-fontface/usr/share/fonts/$$i/roboto-fontface/* ; \
 		for j in `find debian/fonts-roboto-fontface/usr/share/fonts/$$i/roboto-fontface -type f` ; do \
 			FNTFILE=`basename $$j` ; \
 			ln -s ../../fonts/$$i/roboto-fontface/$$FNTFILE debian/fonts-roboto-fontface/usr/share/fonts-roboto-fontface/fonts/$$FNTFILE ; \
