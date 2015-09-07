@@ -1,0 +1,5 @@
+fonts/*.ttf	/usr/share/fonts/truetype/roboto-fontface
+fonts/*.eot	/usr/share/fonts/eot/roboto-fontface
+fonts/*.svg	/usr/share/fonts/svg/roboto-fontface
+fonts/*.woff*	/usr/share/fonts/woff/roboto-fontface
+css/*		/usr/share/fonts-roboto-fontface/css
