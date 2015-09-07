@@ -11,6 +11,7 @@ Homepage: https://github.com/choffmeister/roboto-fontface-bower
 
 Package: fonts-roboto-fontface
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: largely geometric, friendly and open curves font
  Roboto has a dual nature. It has a mechanical skeleton and the forms are
